@@ -26,6 +26,11 @@ body {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -780,6 +785,11 @@ h3,
     overflow: hidden;
     transition: 0.4s ease;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ssf-feature-icon i {
+    color: #ffff;
+    font-size: 25px
 }
 
 
