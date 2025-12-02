@@ -716,14 +716,14 @@ h3,
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('https://img.freepik.com/free-photo/delicious-fries-studio_23-2151846524.jpg?semt=ais_hybrid&w=740&q=80');
+    background: url('../images/background-images/global-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     /* important */
     background-repeat: no-repeat;
     font-family: var(--font-heading);
     color: #fff;
+    background-attachment: fixed;
 }
 
 
@@ -732,8 +732,8 @@ h3,
 .ssf-parallax-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.802);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -2140,7 +2140,7 @@ h3,
     opacity: 0.8;
     transition: 0.3s ease;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 10px;
 }
 
@@ -2894,3 +2894,229 @@ h3,
 
 
 /* blogs page */
+
+
+/* legacy solvent */
+
+.heritage-sec {
+    padding: 60px 0;
+    background: url("https://png.pngtree.com/background/20230413/original/pngtree-food-gourmet-light-background-border-picture-image_2422539.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.heritage-tag {
+    text-align: center;
+    padding: 6px 20px;
+    background: var(--brand-accent);
+    color: var(--brand-light);
+    width: fit-content;
+    margin: 0 auto 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* FLEX */
+
+.heritage-flex {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+
+/* LEFT */
+
+.heritage-left {
+    flex: 1;
+}
+
+.heritage-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    color: var(--brand-primary);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.heritage-title span {
+    color: var(--brand-accent);
+}
+
+.heritage-text {
+    font-size: 17px;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.heritage-points .hp-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.hp-item i {
+    font-size: 22px;
+    color: var(--brand-accent);
+}
+
+
+/* RIGHT */
+
+.heritage-right {
+    flex: 1;
+    position: relative;
+}
+
+.heritage-bg {
+    height: 380px;
+    background: url("https://www.spsolvent.com/images/slider/sp-ban234.jpg") center/cover;
+    /* border-radius: 20px; */
+    filter: brightness(0.6) contrast(1.1);
+}
+
+
+/* Glass Card */
+
+.heritage-glass {
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--brand-light);
+}
+
+.heritage-glass h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 5px;
+}
+
+.float-badge {
+    position: absolute;
+    padding: 10px 18px;
+    background: var(--brand-primary);
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    animation: float 4s infinite ease-in-out;
+}
+
+.badge1 {
+    top: 20px;
+    right: 50px;
+    animation-delay: 0s;
+}
+
+.badge2 {
+    bottom: 80px;
+    right: -10px;
+    animation-delay: 1s;
+}
+
+.badge3 {
+    top: 40%;
+    left: -20px;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* TIMELINE */
+
+.heritage-timeline {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.ht-item span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--brand-primary);
+}
+
+.ht-line {
+    width: 60px;
+    height: 2px;
+    background: var(--brand-accent);
+}
+
+@media(max-width: 900px) {
+    .heritage-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .heritage-right {
+        width: 100%;
+    }
+    .heritage-glass {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .float-badge {
+        display: none;
+    }
+    .heritage-title {
+        font-size: 36px;
+    }
+}
+
+
+/* --- RESPONSIVE TIMELINE FIX --- */
+
+@media (max-width: 768px) {
+    .heritage-timeline {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 60px;
+    }
+    .ht-line {
+        width: 2px;
+        height: 40px;
+    }
+    .ht-item span {
+        font-size: 18px;
+    }
+    .ht-item p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ht-line {
+        height: 30px;
+    }
+}
+
+
+/* legacy solvent */
