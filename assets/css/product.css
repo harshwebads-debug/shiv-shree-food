@@ -454,12 +454,12 @@ h3,
 
 .single-image-wrapper {
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
     transition: 0.4s ease;
-    border: 2px solid var(--brand-primary);
+    /* border: 2px solid var(--brand-primary); */
     background: var(--bg-light);
 }
 
@@ -668,5 +668,146 @@ h3,
     }
     .bulk-section p {
         font-size: 0.9rem;
+    }
+}
+
+
+/* -----------------------------------------
+   PREMIUM NUTRITION SECTION STYLING
+------------------------------------------ */
+
+.sp-nutrition-box {
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #f5f7fa);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.sp-nutri-head {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.sp-nutri-head::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+    display: block;
+    margin-top: 6px;
+}
+
+.sp-nutri-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 22px;
+}
+
+
+/* Each nutritional item */
+
+.nutri-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nutri-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+}
+
+
+/* Main icon styling */
+
+.nutri-item i {
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    transition: .3s ease;
+}
+
+
+/* Icon colors */
+
+.icon-vitamin {
+    color: #E63946;
+}
+
+.icon-energy {
+    color: #FF8C42;
+}
+
+.icon-shield {
+    color: #457B9D;
+}
+
+.icon-heart {
+    color: #C9184A;
+}
+
+.icon-fiber {
+    color: #2A9D8F;
+}
+
+.icon-mineral {
+    color: #1D3557;
+}
+
+
+/* Hover animation */
+
+.nutri-item:hover i {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Text */
+
+.nutri-item span {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+/* Smooth appearance */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .sp-nutri-grid {
+        grid-template-columns: 1fr;
+    }
+    .sp-nutrition-box {
+        padding: 24px;
     }
 }
